@@ -10,78 +10,76 @@
         android:id="@+id/btn_register"
         android:layout_width="320dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/buttonround"
         android:text="가입 완료"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="637dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:text="회원가입"
         android:textColor="#000000"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="143dp" />
-
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:gravity="center_vertical"
-        android:text="이름"
-        android:textColor="#000000"
-        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="256dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_name"
-        android:layout_width="320dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="90dp"
         android:ems="10"
         android:hint="이름을 입력하세요"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="256dp" />
+        app:layout_constraintBottom_toTopOf="@+id/et_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
     <EditText
         android:id="@+id/et_email"
-        android:layout_width="320dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="90dp"
         android:ems="10"
         android:hint="이메일을 입력하세요"
         android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="367dp" />
+        app:layout_constraintBottom_toTopOf="@+id/et_pwd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="64dp"
         android:gravity="center_vertical"
         android:text="이메일"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="71dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
         android:gravity="center_vertical"
         android:text="비밀번호"
         android:textColor="#000000"
@@ -91,13 +89,29 @@
 
     <EditText
         android:id="@+id/et_pwd"
-        android:layout_width="320dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="193dp"
         android:ems="10"
         android:hint="비밀번호를 입력하세요"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="478dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="183dp"
+        android:gravity="center_vertical"
+        android:text="이름"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

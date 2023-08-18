@@ -21,15 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Register"
-            android:exported="false" />
-        <activity
-            android:name=".Login"
-            android:exported="false" />
-        <activity
-            android:name=".Home1"
-            android:exported="false" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".Home1" />
     </application>
 
 </manifest>
